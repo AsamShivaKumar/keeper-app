@@ -16,7 +16,7 @@ function Note(props){
                 <p>
                     {props.content}
                 </p>
-                <button type="submit">Delete</button>
+                <button type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>
             </form>
         );
 }
