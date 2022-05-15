@@ -32,7 +32,7 @@ const Note = new mongoose.model("Note", noteSchema);
 //     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 //   });
 
-app.use(express.static(path.resolve(__dirname, "./client/build")));
+app.use(exp.static(path.resolve(__dirname, "./client/build")));
 
 app.post("/", function(req,res){
     
