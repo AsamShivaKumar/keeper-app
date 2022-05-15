@@ -103,6 +103,8 @@ app.post("/deleteNote", function(req,res){
     });
 });
 
-app.listen(process.env.port || 5000, function(){
-    console.log("Server started");
-});
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 5000;
+}
+app.listen(port);
