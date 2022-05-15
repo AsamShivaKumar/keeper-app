@@ -10,25 +10,24 @@ html {
 }
 body {
   background: #eee;
-  padding: 0 16px;
   width: 100vw;
   background-image: url("https://www.transparenttextures.com/patterns/food.png");
 }
-
 header {
   background-color: #e2c311;
   width: 100vw;
   margin: 0;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  left: -16px;
-  position: relative;
+  left: 0;
+  position: relative; 
 }
 
 header h1 {
   color: #fff;
-  font-family: "McLaren", cursive;
+  font-family: 'Righteous', cursive;
   font-weight: 200;
+  font-size: 3rem;
 }
 
 footer {
@@ -52,10 +51,11 @@ button{
   /* border-radius: 7px; */
   box-shadow: 5px 5px 5px black;
   padding: 10px;
-  width: 240px;
+  width: 320px;
   margin: 16px;
   float: left;
   position: relative;
+  background-color: #F0A500;
 }
 .note h1 {
   font-size: 1.1em;
@@ -69,8 +69,8 @@ button{
 }
 
 .note button{
-   background-color: rgb(252, 249, 106);
-   color: #575815;
+   background-color: #F0A500;
+   color: white;
    position: absolute;
    border: 0;
    padding: 0 5px;
@@ -80,19 +80,14 @@ button{
    transition: all 1s;
 }
 
-.note button:hover{
-  color:  rgb(252, 249, 106);
-  background-color: #575815;
-}
-
 .newNote{
   display: flex;
   flex-direction: column;
   background-color: white;
   padding: 10px;
-  /* border-radius: 5px; */
   margin: 20px auto 0 auto;
   width: 50vw;
+  min-width: 300px;
   position: relative;
   box-shadow: 10px 10px 10px black;
 }
@@ -114,6 +109,8 @@ button{
      width: 40%;
      border: 0;
      padding: 5px 0;
+     font-size: 1rem;
+     color: #B22727;
 }
 
 .newNote input:focus,.newNote textarea:focus{
@@ -122,7 +119,7 @@ button{
 }
 
 .newNote button:hover{
-  background-color: grey;
+  background-color: red;
 }
 
 .newNote textarea{
@@ -131,4 +128,30 @@ button{
   border: 0;
   padding: 5px 0;
   resize: none;
+  font-size: 1rem;
+  color: #B22727;
+}
+
+.newNote *::placeholder{
+  color: #e2c311;
+}
+
+.container{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+::-webkit-scrollbar{
+   width: 5px;
+   border: 0;
+   background-color: white;
+}
+
+::-webkit-scrollbar-thumb{
+  width: 2px;
+  border: 0;
+  background-color: black;
 }
