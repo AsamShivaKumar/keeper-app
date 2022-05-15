@@ -7,6 +7,7 @@ function Login(){
     const [ login, setLogin ] = React.useState(true);
     const [ notes, setNotes ] = React.useState([]);
     const [ user, setUser ] = React.useState("");
+    const [ msg, setMsg ] = React.useState("");
 
     function userLogin(e){
             e.preventDefault();
@@ -25,6 +26,8 @@ function Login(){
                         setLogin(false);
                         return [...prev,...arr]; 
                     });
+                }else{
+                    setMsg("Incorrect password or user-name is already taken")
                 }
             }).catch( err => {
                 console.log(err)
@@ -36,6 +39,7 @@ function Login(){
 
             <div className="loginDiv">
                 <div>
+                    <span>{ msg } </span>
                     <h1>Keeper</h1>
                     <h2>Enter username and password</h2>
                 </div>
