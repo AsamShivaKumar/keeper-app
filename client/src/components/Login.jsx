@@ -39,11 +39,11 @@ function Login(){
 
             <div className="loginDiv">
                 <div>
-                    <span>{ msg } </span>
                     <h1>Keeper</h1>
                     <h2>Enter username and password</h2>
                 </div>
                 <form onSubmit = { userLogin } >
+                <span>{ msg } </span>
                     <input type="text" placeholder="Username..." name="user"></input>
                     <input type="password" placeholder="Password..." name="pass"></input>
                     <button type="submit">Start</button>
