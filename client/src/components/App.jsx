@@ -17,7 +17,7 @@ function App(props){
             return [note,...prevNotes];
         });
 
-        Axios.post("http://localhost:5000/newNote", {
+        Axios.post("/newNote", {
             username: props.user,
             title: note.title,
             content: note.content
@@ -44,7 +44,7 @@ function App(props){
                  });
              });
 
-             Axios.post("http://localhost:5000/deleteNote",{
+             Axios.post("/deleteNote",{
                 title: note.title,
                 content: note.content
              })

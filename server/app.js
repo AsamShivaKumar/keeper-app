@@ -102,6 +102,6 @@ app.post("/deleteNote", function(req,res){
     });
 });
 
-app.listen(5000, function(){
-    console.log("Server started at port 5000");
+app.listen(process.env.port || 5000, function(){
+    console.log("Server started");
 });

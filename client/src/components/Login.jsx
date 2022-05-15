@@ -15,7 +15,7 @@ function Login(){
                 password: e.target.pass.value.trim(),
             };
 
-            Axios.post("http://localhost:5000/", obj)
+            Axios.post("/", obj)
             .then(response => {
                 if(response.data.done === true){                    
                     setNotes( (prev) => {
