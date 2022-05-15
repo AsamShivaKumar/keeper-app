@@ -66,5 +66,6 @@
        .loginDiv form span{
            left: 10px;
            position: relative;
+           width: 360px
        }
 }
