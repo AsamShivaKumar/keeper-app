@@ -28,9 +28,6 @@ function Login(){
                     });
                 }else{
                     setMsg("Incorrect password or user-name is already taken");
-                    setInterval(() =>{
-                        setMsg("");
-                    }, 2000);
                 }
             }).catch( err => {
                 console.log(err)
