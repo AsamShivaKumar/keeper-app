@@ -4,6 +4,7 @@ const exp = require("express");
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require("path");
 
 const app = exp();
 // app.use(bodyParser.urlencoded({extended: true}));
